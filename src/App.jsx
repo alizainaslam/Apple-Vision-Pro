@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
+import Header from "./sections/header/Header";
 
 const App = () => {
   return (
     <>
-      <div>
-        <h1 className="text-xl text-slate-500">React App</h1>
-      </div>
+      <Header />
     </>
   );
 };
