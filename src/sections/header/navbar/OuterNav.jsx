@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Components
 import List from "../../../components/List";
+import SearchNav from "./search/SearchNav";
 
 // Icons
 import { FaApple } from "react-icons/fa";
@@ -11,6 +12,15 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 const OuterNav = () => {
   const navIcons = [<CiSearch />, <IoBag />, <HiOutlineMenuAlt4 />];
+
+  const [searchNavItem, setSearchNavItem] = useState(false);
+
+  const handleClick = (index) => {
+    if (index === 0) {
+      setSearchNavItem((prev) => !prev);
+    }
+  };
+
   return (
     <>
       <div className="outerNav">
@@ -21,9 +31,10 @@ const OuterNav = () => {
 
         {/* Nav Bar Icons as a props to List component */}
         <nav className="navIcon">
-          <List listItems={navIcons} />
+          <List listItems={navIcons} onClick={handleClick} />
         </nav>
       </div>
+      {searchNavItem && <SearchNav />}
     </>
   );
 };

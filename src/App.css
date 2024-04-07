@@ -12,6 +12,9 @@
   --optional-color: #e8e8ed;
   --font-size: calc(16px + 0.390625vw);
 }
+html {
+  -webkit-text-size-adjust: 100%;
+}
 body,
 html {
   height: 100%;

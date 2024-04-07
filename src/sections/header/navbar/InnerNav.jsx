@@ -8,7 +8,7 @@ const InnerNav = () => {
       <div className="innerNav">
         <div className="innerNav-logoText text-sm">Apple Vision Pro</div>
         <nav className="flex gap-4">
-          <button>
+          <button title="dropdown menu">
             <IoIosArrowDown />
           </button>
           <button className="bg-blue-700 pl-2 pr-2 text-sm rounded-xl disabled:">
