@@ -27,3 +27,42 @@ html {
   font-style: normal;
   font-size: var(--font-size);
 }
+
+.outerNav,
+.innerNav {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  color: var(--optional-color);
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header {
+  background-image: url(https://www.apple.com/v/apple-vision-pro/c/images/overview/hero/hero_endframe__dz973mndvu82_large.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(105%);
+  position: relative;
+  height: 100vh;
+}
+.heroText-heading,
+.innerNav-logoText {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.typeHeading {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  color: var(--secondary-color);
+}

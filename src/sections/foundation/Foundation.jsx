@@ -1,5 +1,4 @@
 import React from "react";
-import "./Foundation.css";
 import FouMedia from "../../components/FouMedia";
 import Typogr from "../../components/FouTypogr";
 

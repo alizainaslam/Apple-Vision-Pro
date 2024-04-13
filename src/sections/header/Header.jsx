@@ -1,5 +1,4 @@
 import React from "react";
-import "./Header.css";
 import OuterNav from "./navbar/OuterNav";
 import InnerNav from "./navbar/InnerNav";
 import HeroText from "./herotext/HeroText";
