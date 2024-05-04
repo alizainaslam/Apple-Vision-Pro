@@ -22,8 +22,8 @@ const FouMedia = ({ video }) => {
   };
   return (
     <>
-      <div className="h-full mb-6 w-full relative">
-        <button onClick={togglePlay} className="absolute right-9 top-2 z-10">
+      <div className="h-full mb-6 w-full relative ">
+        <button onClick={togglePlay} className="absolute right-5 top-5 z-10">
           {playing ? (
             <IoIosPause className="text-white" />
           ) : (
@@ -32,7 +32,7 @@ const FouMedia = ({ video }) => {
         </button>
         <video
           ref={videoHandle}
-          className="h-full w-full pl-6 pr-6 rounded-2xl"
+          className="h-full w-full"
           src={video}
           autoPlay
           loop

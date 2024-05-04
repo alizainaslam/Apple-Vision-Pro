@@ -21,12 +21,10 @@ const Tour = () => {
           alt="Apple vision pro side view"
           className="h-auto w-full mt-20 mb-20"
         />
-        <div className="flex h-auto items-center gap-1 font-normal border-solid border-2 border-black rounded-3xl hover:text-white hover:bg-black">
-          <Button
-            btnText={`+ Take a closer look`}
-            style="pt-2 pb-2 pl-4 pr-4"
-          />
-        </div>
+        <Button
+          btnText={`+ Take a closer look`}
+          style="pt-2 pb-2 pl-4 pr-4 font-normal border-solid border-2 border-black rounded-3xl"
+        />
       </div>
     </>
   );
