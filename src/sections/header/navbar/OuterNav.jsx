@@ -13,11 +13,11 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 const OuterNav = () => {
   const navIcons = [<CiSearch />, <IoBag />, <HiOutlineMenuAlt4 />];
 
-  const [searchNavItem, setSearchNavItem] = useState(false);
+  const [isSearchNavOpen, setIsSearchNavOpen] = useState(false);
 
   const handleClick = (index) => {
     if (index === 0) {
-      setSearchNavItem((prev) => !prev);
+      setIsSearchNavOpen(!isSearchNavOpen);
     }
   };
 
@@ -29,12 +29,12 @@ const OuterNav = () => {
           <FaApple className="h-8" />
         </div>
 
-        {/* Nav Bar Icons as a props to List component */}
+        {/* Nav Bar Icons as props to List component */}
         <nav className="navIcon">
           <List listItems={navIcons} onClick={handleClick} />
         </nav>
       </div>
-      {searchNavItem && <SearchNav />}
+      {isSearchNavOpen && <SearchNav />}
     </>
   );
 };
