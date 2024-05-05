@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Typogr from "../../components/FouTypogr";
 import FouMedia from "../../components/FouMedia";
 import Button from "../../components/Button";
+import HiddenAppsInfo from "./HiddenAppsInfo";
 
 const Apps = () => {
+  const [showAdditionalInfo, setShowAdditionalInfo] = useState(false);
+  const handleClick = () => {
+    setShowAdditionalInfo(!showAdditionalInfo);
+  };
   return (
     <div className="h-auto bg-gray-100 flex items-center flex-col gap-1 py-24">
       <h3 className="text-lg font-semibold">Apps</h3>
@@ -31,8 +36,10 @@ const Apps = () => {
         <Button
           btnText={"+ Learn more about apps"}
           style="pt-2 pb-2 pl-4 pr-4 font-normal text-white bg-orange-600 rounded-3xl"
+          onClick={handleClick}
         />
       </div>
+      {showAdditionalInfo && <HiddenAppsInfo />}
     </div>
   );
 };

@@ -1,9 +1,11 @@
 import React from "react";
 
-const Button = ({ btnText, style }) => {
+const Button = ({ btnText, style, onClick }) => {
   return (
     <div className="cursor-pointer">
-      <button className={style}>{btnText}</button>
+      <button className={style} onClick={onClick}>
+        {btnText}
+      </button>
     </div>
   );
 };
